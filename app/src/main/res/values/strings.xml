@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">多屏互动</string>
+    <string name="zoom_in_success">成功放大地图</string>
+    <string name="zoom_out_success">成功缩小地图</string>
+</resources>

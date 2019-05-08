@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/tvSearchBack"
+        style="@style/Common_Button"
+        android:text="返回"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorCutLine"/>
+
+    <TextView
+        android:id="@+id/tvSearchDoSearch"
+        style="@style/Common_Button"
+        android:text="搜索"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorCutLine"/>
+
+    <TextView
+        android:id="@+id/tvSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        tools:text="搜索结果"/>
+
+</LinearLayout>

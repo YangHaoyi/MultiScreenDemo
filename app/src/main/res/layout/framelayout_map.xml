@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/map_bg">
+
+    <TextView
+        android:id="@+id/tvMapNotice"
+        style="@style/Common_Button"
+        android:text="操作提示"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorCutLine"/>
+
+    <TextView
+        android:id="@+id/tvMapZoomIn"
+        style="@style/Common_Button"
+        android:text="放大地图"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorCutLine"/>
+
+    <TextView
+        android:id="@+id/tvMapZoomOut"
+        style="@style/Common_Button"
+        android:text="缩小地图"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorCutLine"/>
+
+    <TextView
+        android:id="@+id/tvToSearchPage"
+        style="@style/Common_Button"
+        android:text="跳转搜索页"/>
+
+
+</LinearLayout>
