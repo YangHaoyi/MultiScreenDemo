@@ -19,7 +19,8 @@ import com.yanghaoyi.presentation.view.page.SearchFrameLayout;
  *         Change : YangHaoYi on 2019/1/2.
  *         Version : V 1.0
  */
-public class MainActivity extends FragmentActivity implements View.OnClickListener, MapFrameLayout.MapCallBackListener, SearchFrameLayout.SearchCallBack {
+public class MainActivity extends FragmentActivity implements View.OnClickListener,
+        MapFrameLayout.MapCallBackListener, SearchFrameLayout.SearchCallBack {
 
     /** 展示第二块屏幕按钮 **/
     private TextView tvShowPresentation;

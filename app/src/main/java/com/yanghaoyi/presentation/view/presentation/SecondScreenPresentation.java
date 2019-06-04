@@ -19,11 +19,12 @@ import org.greenrobot.eventbus.Subscribe;
 /**
  * @author : YangHaoYi on 2019/1/2.
  *         Email  :  yang.haoyi@qq.com
- *         Description :
+ *         Description :双屏异显辅助屏幕
  *         Change : YangHaoYi on 2019/1/2.
  *         Version : V 1.0
  */
-public class SecondScreenPresentation extends Presentation implements MapFrameLayout.MapCallBackListener, SearchFrameLayout.SearchCallBack {
+public class SecondScreenPresentation extends Presentation implements MapFrameLayout.MapCallBackListener,
+        SearchFrameLayout.SearchCallBack {
 
     /** TAG **/
     private static final String TAG = "Presentation";
@@ -84,6 +85,7 @@ public class SecondScreenPresentation extends Presentation implements MapFrameLa
                     searchFrameLayout.setSearchBackListener(this);
                     fmContent.addView(searchFrameLayout);
                 }else {
+                    searchFrameLayout.setSearchBackListener(this);
                     fmContent.addView(searchFrameLayout);
                 }
                 break;

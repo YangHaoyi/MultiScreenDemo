@@ -11,10 +11,10 @@ import com.yanghaoyi.presentation.view.service.MultiScreenService;
 
 
 /**
- * @author : YangHaoYi on  2019/4/3011:24.
+ * @author : YangHaoYi on  2019/4/30.
  * Email  :  yang.haoyi@qq.com
  * Description :离屏逻辑控制中心
- * Change : YangHaoYi on  2019/4/3011:24.
+ * Change : YangHaoYi on  2019/4/30.
  * Version : V 1.0
  */
 public class PresentationPresenter {
@@ -24,11 +24,13 @@ public class PresentationPresenter {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             multiScreenService = ((MultiScreenService.MultiScreenBinder) service).getService();
+            //显示第二块屏幕
             multiScreenService.showSearchPresentation();
         }
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
+            //恢复置空
             multiScreenService = null;
         }
     };
